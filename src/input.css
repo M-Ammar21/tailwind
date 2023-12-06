@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+            font-family: poppins;
+        }
+        .hamburger-active>span:nth-child(1) {
+            @apply rotate-45 
+            
+        }
+        .hamburger-active>span:nth-child(3) {
+            @apply -rotate-45 
+
+        }
+        .hamburger-active>span:nth-child(2) {
+            @apply scale-0 
+
+
+        }
+
+        .hamburger-line {
+            @apply w-[30px] h-[2px] my-2 block bg-dark
+        }
+
+        .navbar-fixed{
+            @apply fixed z-[1000] bg-white bg-opacity-80 backdrop-blur-[2px] rounded-b-sm drop-shadow-lg 
+        }
+        .logo-blur{
+            @apply shadow-xl grayscale-0
+        };
+        .font-outline-2 {
+    -webkit-text-stroke: 1px #3F3F3F;
+  }
